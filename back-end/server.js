@@ -7,6 +7,11 @@ const userRouter = require("./routes/user")
 const cors = require("cors")
 
 
+app.use(cors({
+    origin: 'https://https://evaluation-frontend.onrender.com/'
+}));
+
+
 // express app
 const app = express()
 
