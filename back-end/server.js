@@ -7,13 +7,13 @@ const userRouter = require("./routes/user")
 const cors = require("cors")
 
 
-app.use(cors({
-    origin: 'https://https://evaluation-frontend.onrender.com/'
-}));
-
-
 // express app
 const app = express()
+
+
+app.use(cors({
+    origin: 'https://evaluation-frontend.onrender.com/'
+}));
 
 // middleware
 app.use(express.json())
