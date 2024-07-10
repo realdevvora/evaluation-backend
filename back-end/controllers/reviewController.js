@@ -21,7 +21,7 @@ const getReview = async (req, res) => {
 
     const review = await ReviewModel.findById(id)
     if (!review) {
-        return res.status(400).json({error: "NO review found"})
+        return res.status(400).json({error: "No review found"})
     }
 
     res.status(200).json(review)

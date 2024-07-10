@@ -21,7 +21,7 @@ const getCourse = async (req, res) => {
 
     const course = await CourseModel.findById(id)
     if (!course) {
-        return res.status(400).json({error: "NO course found"})
+        return res.status(400).json({error: "No course found"})
     }
 
     res.status(200).json(course)

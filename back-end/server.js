@@ -12,7 +12,7 @@ const app = express()
 
 
 app.use(cors({
-    origin: 'https://evaluation-frontend.onrender.com'
+    origin: process.env.HOST
 }));
 
 // middleware
